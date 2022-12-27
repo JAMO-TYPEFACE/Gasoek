@@ -1,2 +1,3 @@
-# Gasoek
-Gasoek 2022 by JAMO
+# Gasoek Project
+
+![README image_Gasoek](Documentation/images/README image_Gasoek.jpg)
