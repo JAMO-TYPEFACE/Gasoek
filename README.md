@@ -1,3 +1,3 @@
 # Gasoek Project
 
-![README image_Gasoek](Documentation/images/README image_Gasoek.jpg)
+![image_Gasoek](Documentation/images/image_Gasoek.jpg)
