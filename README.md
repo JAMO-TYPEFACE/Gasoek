@@ -1,6 +1,6 @@
 ## Gasoek
 
-![Gasoek Image1](Documentation/images/Gasoek_intro.jpg)
+![Gasoek Image1](Documentation/images/gasoek.jpg)
 
 
 ## Basic Information
