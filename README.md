@@ -1,6 +1,6 @@
 # Gasoek
 
-![gasoek Image1](Documentation/images/gasoek.jpg)
+![gasoek Image1](Documentation/images/gasoek_github.jpg)
 
 
 ## Basic Information
