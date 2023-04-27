@@ -2,11 +2,7 @@
 .appVersion = "3151";
 .formatVersion = 3;
 DisplayStrings = (
-"ááâä̀àåãæbcçdðeéêëèfghiıíîïìjklmnñoóôöòø̃õœpþqrsßtuúûüùvwẃŵẅẁxyýŷÿỳz",
-012345fO6789,
-"aá́̂â̈ä̀à̊å̃ãæbcçdðeéêëèfghiıíîïìjklmnñoóôöòøõœpþqrsßtuúûüùvwwẃŵẅẁxyýŷÿỳzªº",
-"A/acutecomb.case Á/circumflexcomb.case Â/dieresiscomb.case Ä/gravecomb.case À/ringcomb.case Å/tildecomb.case ÃÆBCÇDÐE/acutecomb.case É/circumflexcomb.case Ê/dieresiscomb.case Ë/gravecomb.case ÈFGHIÍÎÏÌJKLMNÑOÓÔÖÒØÕŒPÞQRSẞTUÚÛÜÙVWẂŴẄ/gravecomb.case ẀXYÝŶŸỲZ",
-"aáâäàåãæbcçdðeéêëèfghiıíîïìjklmnñoóôöòøõœpþqrsßtuúûüùvwẃŵẅẁxyýŷÿỳz"
+"ㅖ"
 );
 classes = (
 {
@@ -213945,7 +213941,7 @@ unicode = 12629;
 },
 {
 glyphname = "yeCompa-ko";
-lastChange = "2023-04-07 17:10:24 +0000";
+lastChange = "2023-04-25 02:06:53 +0000";
 layers = (
 {
 layerId = "75B71696-F68C-493E-998D-CC33CA41914E";
@@ -213971,16 +213967,8 @@ nodes = (
 (162,157,l),
 (261,157,l),
 (261,-24,l),
-(450,-24,l),
-(450,157,l),
-(451,157,l),
-(451,373,l),
-(450,373,l),
-(450,463,l),
-(451,463,l),
-(451,679,l),
-(450,679,l),
-(450,813,l),
+(451,-24,l),
+(451,813,l),
 (261,813,l)
 );
 }
