@@ -1,0 +1,5 @@
+.DS_Store
+venv
+*.md
+changelist
+Sources/master_ufo
