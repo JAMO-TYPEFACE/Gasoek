@@ -1,9 +1,6 @@
 {
 .appVersion = "3151";
 .formatVersion = 3;
-DisplayStrings = (
-"ㅖ"
-);
 classes = (
 {
 automatic = 1;
@@ -52,6 +49,7 @@ feature ordn;
 feature fwid;
 feature ss01;
 feature ss02;
+feature case;
 ";
 tag = aalt;
 },
@@ -60,9 +58,18 @@ automatic = 1;
 code = "lookup ccmp_Other_1 {
 	@CombiningTopAccents = [acutecomb circumflexcomb dieresiscomb dotaccentcomb gravecomb ringcomb tildecomb];
 	@CombiningNonTopAccents = [cedillacomb];
-	sub [i]' @CombiningTopAccents by [idotless];
-	sub [i]' @CombiningNonTopAccents @CombiningTopAccents by [idotless];
+	sub [i j]' @CombiningTopAccents by [idotless jdotless];
+	sub [i j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless jdotless];
+	@Markscomb = [dieresiscomb gravecomb acutecomb circumflexcomb ringcomb tildecomb];
+	@MarkscombCase = [dieresiscomb.case gravecomb.case acutecomb.case circumflexcomb.case ringcomb.case tildecomb.case];
+	sub @Markscomb @Markscomb' by @MarkscombCase;
+	sub @Uppercase @Markscomb' by @MarkscombCase;
 } ccmp_Other_1;
+
+lookup ccmp_Other_2 {
+	sub @Markscomb' @MarkscombCase by @MarkscombCase;
+	sub @MarkscombCase @Markscomb' by @MarkscombCase;
+} ccmp_Other_2;
 ";
 tag = ccmp;
 },
@@ -168,6 +175,17 @@ tag = ss02;
 {
 code = "sub J A M O by J_A_M_O.dlig;";
 tag = dlig;
+},
+{
+automatic = 1;
+code = "sub dieresiscomb by dieresiscomb.case;
+sub gravecomb by gravecomb.case;
+sub acutecomb by acutecomb.case;
+sub circumflexcomb by circumflexcomb.case;
+sub ringcomb by ringcomb.case;
+sub tildecomb by tildecomb.case;
+";
+tag = case;
 }
 );
 fontMaster = (
@@ -4092,6 +4110,43 @@ width = 421;
 }
 );
 unicode = 106;
+},
+{
+glyphname = jdotless;
+lastChange = "2023-05-12 17:12:24 +0000";
+layers = (
+{
+layerId = "75B71696-F68C-493E-998D-CC33CA41914E";
+shapes = (
+{
+closed = 1;
+nodes = (
+(403,647,l),
+(403,804,l),
+(115,804,l),
+(115,647,l)
+);
+},
+{
+closed = 1;
+nodes = (
+(159,-189,o),
+(403,-215,o),
+(403,96,cs),
+(403,620,l),
+(115,620,l),
+(115,90,ls),
+(115,-22,o),
+(67,-19,o),
+(25,-21,c),
+(12,-183,l)
+);
+}
+);
+width = 421;
+}
+);
+unicode = 567;
 },
 {
 glyphname = k;
